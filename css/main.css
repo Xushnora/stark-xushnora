@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&family=Inter:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito+Sans:wght@400;600;700;800&family=Open+Sans:wght@400;700&family=Orelega+One&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600;700;800&family=Prata&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Heebo:wght@300;400;500&family=Inter:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito+Sans:wght@400;600;700;800&family=Open+Sans:wght@400;700&family=Orelega+One&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600;700;800&family=Prata&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
 
 *,
 *::after,
@@ -41,7 +43,9 @@ a {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #0000004d;
+    /* background-color: #0000004d; */
+    background-color: transparent;
+    z-index: 2000;
 }
 
 .logo-link {
@@ -292,6 +296,11 @@ a {
     background-color: transparent;
     border: none;
     padding: 10px;
+    cursor: pointer;
+}
+
+.btn:focus{
+    outline: none;
 }
 
 .desc-chair {
@@ -301,12 +310,13 @@ a {
 
 .title-block {
     position: absolute;
-    top: 350px;
-    left: 150px;
+    top: 300px;
+    left: 200px;
     z-index: -2;
 }
 
 .chair-span {
+    font-family: 'Barlow Condensed', sans-serif;
     text-transform: capitalize;
     color: #fff;
     font-size: 12px;
@@ -317,10 +327,12 @@ a {
 }
 
 .chair-title {
+    font-family: 'Barlow Condensed', sans-serif;
     margin-bottom: 35px;
     color: #fff;
-    font-size: 40px;
-    letter-spacing: -2px;
+    font-size: 63px;
+    letter-spacing: -6px;
+    font-weight: 500;
 }
 
 .tab {
@@ -395,10 +407,11 @@ a {
 }
 
 .chair-btn {
+    font-family: 'Barlow Condensed', sans-serif;
     /* position: absolute; */
     padding: 10px 22px;
     color: #000;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 6px;
@@ -507,7 +520,7 @@ a {
 
 /*  ---- DISCOVER-BLOCK -----  */
 
-.discover-div:nth-child(1) {
+.discover-item:nth-child(1) {
     width: 440px;
     height: 281px;
     background-image: url('../images/stark_home3-banner1.jpg');
@@ -515,7 +528,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.discover-div:nth-child(2) {
+.discover-item:nth-child(2) {
     width: 440px;
     height: 281px;
     background-image: url('../images/stark_home3-banner2.jpg');
@@ -525,7 +538,7 @@ a {
 
 }
 
-.discover-div:nth-child(3) {
+.discover-item:nth-child(3) {
     width: 440px;
     height: 281px;
     background-image: url('../images/stark_home3-banner3.jpg');
@@ -536,7 +549,7 @@ a {
 .discover-item {
     padding-top: 20px;
     padding-left: 15px;
-    transition: all 2s ease;
+    /* transition: all 2s ease; */
     /* overflow: hidden; */
 }
 
@@ -549,8 +562,37 @@ a {
 
 .discover-span {
     display: inline-block;
-    color: #888787;
-    font-size: 15px;
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.discover-title{
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 28px;
+    width: 100px;
+}
+
+.discover-link{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #222;
+    font-size: 14px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+
+.discover-link::after{
+    content: '';
+    width: 97%;
+    height: 2px;
+    background-color:#d88f0f;
+    display: block;
+    position: absolute;
+
+
 }
 
 /*   -----  MODAL USER ----- */
@@ -728,3 +770,67 @@ a {
     max-width: 20px;
     padding-right: 3px;
 }
+
+/* ------ MESSENGER-BOX ------*/
+
+.mss-bx{
+    font-size: 50px;
+    color: #fff;
+}
+
+.messenger-btn{
+    padding: 5px 5px 3.5px 5px;
+    border-radius: 50%;
+    background-color: #0A7CFF;
+    border: none;
+}
+
+.messenger-block{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.messenger-box{
+    width: 330px;
+    height: 350px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 30px;
+    display: none;
+}
+
+.box-inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.mess-title{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.mess-text1{
+    color: #00000080;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.mess-text2{
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.xushnora-btn{
+    font-size: 17px;
+    color: #fff;
+    background-color: #0a7cff;
+    padding:10px 30px;
+    border-radius: 13px;
+    border: none;
+}
+
