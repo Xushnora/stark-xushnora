@@ -81,11 +81,13 @@
                                     <h4 class="category-title">home</h4>
                                     <ul class="living-list">
                                         <li class="living-item">Dining<i class='bx bx-caret-down'></i></li>
-                                        <ul class="living-list-in">
-                                            <li class="living-item-in">Chairs <i class='bx bx-caret-down'></i></li>
-                                            <li class="living-item-in">Sofas <i class='bx bx-caret-down'></i></li>
-                                            <li class="living-item-in">Stools <i class='bx bx-caret-down'></i></li>
-                                        </ul>
+                                            <div class="living-list-in">
+                                                <ul>
+                                                    <li class="living-item-in">Chairs <i class='bx bx-caret-down'></i></li>
+                                                    <li class="living-item-in">Sofas <i class='bx bx-caret-down'></i></li>
+                                                    <li class="living-item-in">Stools <i class='bx bx-caret-down'></i></li>
+                                                </ul>
+                                            </div>
                                         <li class="living-item">Clocks <i class='bx bx-caret-down'></i></li>
                                         <li class="living-item">Living<i class='bx bx-caret-down'></i></li>
                                         <li class="living-item">Stats<i class='bx bx-caret-down'></i></li>
@@ -166,33 +168,6 @@
             </div>
         </div>
     </section>
-    <section id="discover">
-        <div class="discover-block">
-            <ul class="discover-list row middle">
-                <li class="discover-item col-4">
-                    <div>
-                        <span class="discover-span">limited offers</span>
-                        <h3 class="discover-title">Minimal Clock</h3>
-                        <a href="#" class="discover-link">discover now</a>
-                    </div>
-                </li>
-                <li class="discover-item col-4">
-                    <div>
-                        <span class="discover-span">sale off 20%</span>
-                        <h3 class="discover-title">Orange Chair</h3>
-                        <a href="#" class="discover-link">discover now</a>
-                    </div>
-                </li>
-                <li class="discover-item col-4">
-                    <div>
-                        <span class="discover-span">choose for you</span>
-                        <h3 class="discover-title">Hanging light</h3>
-                        <a href="#" class="discover-link">discover now</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
     <div class="modul-search" id="modal-sr">
         <div class="close-block row middle between">
             <p class="close-text">what are you looking for?</p>
@@ -204,9 +179,8 @@
         </div>
     </div>
 
-    <div class="login-user" id="modal-user">
-        <button class="cross-btn" id="close-login"><span class="left-cross"></span>
-            <span class="right-cross"></span></button>
+    <div class="login-user" id="modalUser">
+        <button id="closeLogin" class="left-cross"></button>
         <div class="login-sing">
             <a class="login-link right-reg" href="#">sign in</a>
             <a class="login-link left-reg" href="#">register</a>
@@ -221,7 +195,7 @@
 
         <ul class="login-list">
             <li class="login-item"><a class="modal-login-link" href="#">
-                <!-- <span><img src="./images/compress-alt-solid.svg" alt="icon" width="14" height="14"></span>--> Compare (0)</a></li>
+                Compare (0)</a></li>
             <li class="login-item"><a class="modal-login-link" href="#"><i class="fa fa-heart icon-sign"></i>Wishlist
                     (0)</a></li>
             <li class="login-item"><img class="icon-flag" src="./images/1.jpg" alt="English" width="16" height="11">
@@ -232,17 +206,56 @@
     <div class="messenger-block">
         <button class="messenger-btn" id="messenger"><i class='bx bxl-messenger mss-bx'></i></button>
     </div>
-    <div class="messenger-box">
+    <div class="messenger-box" id="modulMess">
         <div class="box-inner">
-            <img src="./images/mess-img.jpg" alt="mess-img" width="48" height="48">
+             <div class="mess-btns row between">
+                <img class="mess-img" src="./images/mess-img.jpg" alt="mess-img" width="48" height="48">
+                <div>
+                    <button class="dots-btn"><i class='bx bx-dots-horizontal-rounded'></i></button>
+                    <button class="minus-btn" id="minus"><i class='bx bx-minus'></i></button>
+                </div>
+             </div>
             <h3 class="mess-title">Chat with Rubik Theme</h3>
             <p class="mess-text1">Typically replies within a few hours</p>
             <p class="mess-text2">Hi! How can we help you?</p>
             <button class="xushnora-btn"><i class='bx bxl-messenger'></i> Continue as Xushnora</button>
             <button class="guest-btn">Continue as Guest</button>
-            <p>By continuing as a guest, you agree to Facebook's <a href="#" target="_blank">Terms,</a> <a href="#" target="_blank">Data Policy</a> and <a href="#" target="_blank">Cookies Policy.</a></p>
+            <p class="mess-text3">By continuing as a guest, you agree to Facebook's <a class="fc-link" href="#" target="_blank">Terms,</a> <a class="fc-link" href="#" target="_blank">Data Policy</a> and <a class="fc-link" href="#" target="_blank">Cookies Policy.</a></p>
         </div>
     </div>
+    <section id="discover">
+       <div class="container">
+            <div class="discover-block">
+            <ul class="discover-list row middle">
+                <li class="discover-item col-4">
+                    <div class="for-img"></div>
+                    <div class="discover-text-box">
+                        <span class="discover-span">limited offers</span>
+                        <h3 class="discover-title">Minimal Clock</h3>
+                        <a href="#" class="discover-link">discover now</a>
+                    </div>
+                </li>
+                <li class="discover-item col-4">
+                    <div class="for-img"></div>
+                    <div class="discover-text-box">
+                        <span class="discover-span">sale off 20%</span>
+                        <h3 class="discover-title">Orange Chair</h3>
+                        <a href="#" class="discover-link">discover now</a>
+                    </div>
+                </li>
+                <li class="discover-item col-4">
+                    <div class="for-img"></div>
+                    <div class="discover-text-box">
+                        <span class="discover-span">choose for you</span>
+                        <h3 class="discover-title">Hanging light</h3>
+                        <a href="#" class="discover-link">discover now</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+       </div>
+    </section>
+    
 
 
 
