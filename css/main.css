@@ -23,7 +23,9 @@ body {
 }
 
 .container2{
-    width: 1200px;
+    width: 1349px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /*   ---  HEADER + HERO QISM ---    */
@@ -708,6 +710,7 @@ a {
     position: fixed;
     right: 30px;
     bottom: 30px;
+    z-index: 10000;
 }
 
 .messenger-box{
@@ -806,9 +809,6 @@ a {
 
 /*  ---- DISCOVER-BLOCK -----  */
 
-.discover-block{
-    padding-bottom: 100px;
-}
 
 .discover-item:nth-child(1) .for-img{
     width: 100%;
@@ -893,6 +893,282 @@ a {
 }
 
 /* ---- THE END ---- */
+
+/* -------------- SHOPS ___ CHAIRS  --------------------- */
+
+#shops{
+    padding: 70px 0;
+}
+
+.shops-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+
+.menu-item{
+    margin-left: 60px;   
+}
+.menu-link{
+    font-size: 20px;
+    font-weight: 500;
+    color: #888;
+    padding-bottom: 8px;
+}
+
+.active-menu{
+    color: #000;
+}
+
+.menu-link:hover{
+    color: #000;
+}
+
+.menu-item:not(:nth-child(1)) .menu-link::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color:#d88f0f;
+    display: block;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.menu-item:hover:not(:nth-child(1)) .menu-link::after{
+    opacity: 1;
+    width: 100%;
+}
+
+.active-menu::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color:#d88f0f;
+    display: block;
+}
+
+/* ----- CHAIRS PORTION START ----- */
+
+.shop-chairs-list{
+    width: 100%;
+}
+
+.shop-chairs-item{
+    position: relative;
+    margin-bottom: 15px;
+    height: 385px;
+}
+
+.shop-chairs-img{
+    position: relative;
+}
+.shop-chairs-img{
+    width: 240px;
+    height: 285px;
+    background-image: url('../images/front-chair1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+}
+.shop-chairs-item:nth-child(2) .shop-chairs-img{
+    background-image: url('../images/front-chair2.jpg');
+}
+.shop-chairs-item:nth-child(3) .shop-chairs-img{
+    background-image: url('../images/front-chair3.jpg');
+}
+.shop-chairs-item:nth-child(4) .shop-chairs-img{
+    background-image: url('../images/front-chair4.jpg');
+}
+.shop-chairs-item:nth-child(5) .shop-chairs-img{
+    background-image: url('../images/front-chair5.jpg');
+}
+.shop-chairs-item:nth-child(6) .shop-chairs-img{
+    background-image: url('../images/front-chair6.jpg');
+}
+.shop-chairs-item:nth-child(7) .shop-chairs-img{
+    background-image: url('../images/front-chair7.jpg');
+}
+.shop-chairs-item:nth-child(8) .shop-chairs-img{
+    background-image: url('../images/front-chair8.jpg');
+}
+.shop-chairs-item:nth-child(9) .shop-chairs-img{
+    background-image: url('../images/front-chair9.jpg');
+}
+.shop-chairs-item:nth-child(10) .shop-chairs-img{
+    background-image: url('../images/front-chair10.jpg');
+}
+
+/*  HOVERS  */
+
+.shop-chairs-item:nth-child(1):hover .shop-chairs-img{
+    background-image: url('../images/chair1.jpg');
+}
+.shop-chairs-item:nth-child(2):hover .shop-chairs-img{
+    background-image: url('../images/chair2.jpg');
+}
+.shop-chairs-item:nth-child(3):hover .shop-chairs-img{
+    background-image: url('../images/chair3.jpg');
+}
+.shop-chairs-item:nth-child(4):hover .shop-chairs-img{
+    background-image: url('../images/chair4.jpg');
+}
+.shop-chairs-item:nth-child(5):hover .shop-chairs-img{
+    background-image: url('../images/chair5.jpg');
+}
+.shop-chairs-item:nth-child(6):hover .shop-chairs-img{
+    background-image: url('../images/chair6.jpg');
+}
+.shop-chairs-item:nth-child(7):hover .shop-chairs-img{
+    background-image: url('../images/chair7.jpg');
+}
+.shop-chairs-item:nth-child(8):hover .shop-chairs-img{
+    background-image: url('../images/chair8.jpg');
+}
+.shop-chairs-item:nth-child(9):hover .shop-chairs-img{
+    background-image: url('../images/chair9.jpg');
+}
+.shop-chairs-item:nth-child(10):hover .shop-chairs-img{
+    background-image: url('../images/chair10.jpg');
+}
+
+.shop-new{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 10;
+}
+.new-red{
+    background-color: #fc0202;
+    font-size: 10px;
+    color: #fff;
+    padding: 3px 5px;
+}
+.new-blue{
+    background-color: #39bffd;
+    font-size: 10px;
+    color: #fff;
+    padding: 4px 5px 3px 0;
+}
+.new-blue-all{
+    background-color: #39bffd;
+    font-size: 10px;
+    color: #fff;
+    padding: 4px 8px;
+}
+
+.bx-heart{
+    font-size: 20px;
+    color: #fff;
+}
+
+.shop-hover{
+    position: absolute;
+    left: 50px;
+    bottom: 125px;
+    transition: all 0.5s ease;
+}
+
+.shop-hover-item{
+    margin-left: 5px;
+    padding: 10px 12px;
+    background-color: rgba(0, 0, 0, 0.863);
+    opacity: -1;
+    transition: all 0.5s ease;
+}
+
+.shop-hover .shop-hover-item:nth-child(1){
+    transition: all 0.2s ease;
+}
+.shop-hover .shop-hover-item:nth-child(2){
+    transition: all 0.6s ease;
+}
+.shop-hover .shop-hover-item:nth-child(3){
+    transition: all 0.9s ease;
+}
+
+.shop-chairs-item:hover .shop-hover .shop-hover-list .shop-hover-item{
+    opacity: 1;
+    bottom: 110px;
+}
+.shop-chairs-item:hover .shop-hover{
+    bottom: 110px;
+}
+
+/* ----- TEXT BLOCK ----- */
+
+.shop-chairs-desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bxs-star{
+    color: #a3a3a3;
+    font-size: 13px;
+}
+
+.activ-star .bxs-star{
+    color: #d88f0f;
+}
+
+.shop-design-title{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    font-weight: 500;
+}
+.shop-design-title:hover{
+    color: #d88f0f;
+}
+
+.shop-design{
+    margin-top: 15px;
+}
+
+.desc-title-div{
+    margin-top: 10px;
+}
+
+.shops-desc-title{
+    color: rgba(59, 59, 59, 0.89);
+    font-size: 15px;
+    text-transform: uppercase;
+    
+}
+.shops-desc-title:hover{
+    color: #d88f0f;
+}
+
+.money-span{
+    color: #888;
+    font-size: 14px;
+    position: relative;
+}
+.money-span::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #888;
+    display: block;
+    position: absolute;
+    top: 45%;
+}
+
+.shops-money{
+    color: #222;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.money-desc{
+    margin-top: 10px;
+}
+
+
+
+
 
 
 
