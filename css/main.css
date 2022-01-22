@@ -900,6 +900,10 @@ a {
     padding: 70px 0;
 }
 
+.shops-portion{
+    padding-bottom: 50px;
+}
+
 .shops-menu{
     display: flex;
     align-items: center;
@@ -1166,7 +1170,31 @@ a {
     margin-top: 10px;
 }
 
+/*   --  BTN --   */
 
+.shops-btn{
+    position: relative;
+    left: 40%;
+    top: 0;
+    background: transparent;
+    border: 1px solid #999;
+    height: 60px;
+    min-width: 280px;
+    line-height: 60px;
+    text-transform: uppercase;
+    padding: 0 50px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #222;
+    font-weight: 600;
+    font-family: "Barlow Condensed",sans-serif;
+}
+
+.shops-btn:hover{
+    background-color:#d88f0f;
+    color: #fff;
+    border: none;
+}
 
 
 
