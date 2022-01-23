@@ -1410,7 +1410,7 @@ a {
 }
 .partner-item{
     margin: 0px 48px;
-    animation: partner-scrool 8s ease 1s infinite;
+    animation: partner-scrool 8s ease-in-out 1s infinite;
 }
 
 
