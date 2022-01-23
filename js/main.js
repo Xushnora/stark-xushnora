@@ -41,13 +41,11 @@ let closeModalMess = document.getElementById('minus');
 
 openModalMess.addEventListener('click', function()
 {
-    console.log(openModalMess)
+    // console.log(openModalMess)
     messModal.classList.toggle('showmess')
 
 });
 
-// closeModalMess = document.addEventListener('click', function()
-// {
-//     messModal.classList.remove('showmess')
-
-// });
+closeModalMess.addEventListener('click', function(){
+    messModal.classList.remove('showmess')
+})
