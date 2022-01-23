@@ -814,7 +814,7 @@ a {
 }
 
 .xushnora-btn{
-    font-size: 17px;
+    font-size: 16px;
     color: #fff;
     background-color: #0a7cff;
     padding:13px 30px;
@@ -823,9 +823,12 @@ a {
     margin-bottom: 15px;
     cursor: pointer;
 }
+.xushnora-btn:hover{
+    background-color: #3191ff;
+}
 
 .guest-btn{
-    font-size: 17px;
+    font-size: 16px;
     color: #000;
     background-color: #F2F2F2;
     padding:13px 30px;
@@ -833,6 +836,10 @@ a {
     border: none;
     margin-bottom: 15px;
     cursor: pointer;
+}
+
+.guest-btn:hover{
+    background-color: #d6d6d6;
 }
 
 .mess-btns{
@@ -845,6 +852,13 @@ a {
     background-color: #f2f2f2;
     padding: 7px 7px 5px 7px;
     cursor: pointer;
+}
+
+.minus-btn:hover{
+    background-color: #c9c8c8;
+}
+.dots-btn:hover{
+    background-color: #c9c8c8;
 }
 
 .mess-text3{
