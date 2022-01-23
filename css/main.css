@@ -51,7 +51,7 @@ a {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #5684D1;
+    background-color: #5683d19a;
     z-index: 2000;
 }
 
@@ -309,6 +309,24 @@ a {
     color: #fff;
 }
 
+.basket-btn{
+    position: relative;
+}
+
+.basket-btn::after{
+    content: '0';
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-color:#d88f0f;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 4px;
+    color: #fff;
+    font-size: 13px;
+}
+
 .btn {
     background-color: transparent;
     border: none;
@@ -547,12 +565,13 @@ a {
 
 #closeLogin{
     border: none;
-    background-color:#d4d3d3;
     border-radius: 50%;
     position: relative;
-    top: -35px;
-    padding: 15px;
+    top: 0;
     cursor: pointer;
+    background-color:#d4d3d3;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -581,14 +600,21 @@ a {
     transition: all 0.4s ease;
 }
 
-.left-cross:hover .left-cross::after{
-    transform: rotate(180deg);
+.btn-div:hover .left-cross::after{
+    transform: rotate(0deg);
 }
-.left-cross:hover .left-cross::before{
-    transform: rotate(180deg);
+.btn-div:hover .left-cross::before{
+    transform: rotate(0deg);
 }
 
-/*  --- YUQORIDAGI QISMNI ISHLATIB QO'Y --- */
+.btn-div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: -35px;
+    cursor: pointer;
+}
 
 .login-sing {
     margin-bottom: 20px;
@@ -678,6 +704,33 @@ a {
 
 .login-item:hover .modal-login-link,
 .icon-sign {
+    color: #d88f0f;
+}
+
+.collap1{
+    color: #222;
+    font-size: 15px;
+    padding-right: 5px;
+}
+.login-item:hover .collap1{
+    color: #d88f0f;
+}
+
+.heart-user{
+    font-size: 15px;
+    padding-right: 6px;
+    color: #222;
+}
+.login-item:hover .heart-user{
+    color: #d88f0f;
+}
+
+.money-user{
+    font-size: 15px;
+    padding-right: 6px;
+    color: #222;
+}
+.login-item:hover .money-user{
     color: #d88f0f;
 }
 
@@ -1067,7 +1120,7 @@ a {
     color: #fff;
 }
 
-.bx-collapse-alt{
+.collap2{
     font-size: 22px;
     color: #fff;
 }
@@ -1346,7 +1399,29 @@ a {
 
 #partner{
     background-color: #f7f7f7;
-    padding: 15px 0;
+}
+
+.partner-list{
+    overflow-x: hidden;
+    width: 1330px;
+    margin: 0 auto;
+    display: flex;
+
+}
+.partner-item{
+    margin: 0px 48px;
+    animation: partner-scrool 8s ease 1s infinite;
+}
+
+
+@keyframes partner-scrool{
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+   
+    100%{
+        transform: translate3d(-1230px, 0px, 0px);
+    }
 }
 
 
@@ -1432,6 +1507,10 @@ a {
 
 .social-item{
     margin: 0 10px;
+}
+
+.social-item:hover .bx{
+    color: #d88f0f;
 }
 
 .contact-list{

@@ -39,8 +39,8 @@
     flex-basis: 8.33333%;
 }
 .col-2{
-    max-width: 16.66666%;
-    flex-basis: 16.66666%;
+    width: 500px !important;
+    /* flex-basis: 16.66666%; */
 }
 .col-3{
     max-width: 25%;
